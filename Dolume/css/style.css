@@ -8,8 +8,8 @@
 }
 /*header*/
 header{
-background-image: url("/Dolume/images/green_tech.jpg");
-padding-bottom: 35em ;
+background-image: url("/Dolume/images/Projects\ Simplified\ 2.png");
+padding-bottom: 50em ;
 background-size:cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -19,10 +19,11 @@ background-position: center;
 /*Nav Bar*/
 nav{
   padding-top: 1em;
-  background: url("/Dolume/images/Seamles\ Leaf\ Pattern.svg");
+
 }
 
 .nav_list{
+  list-style-type: none;
   display: flex;
   justify-content: center;
   padding: 1rem, 0;
@@ -35,11 +36,15 @@ margin-right: 2rem;
 }
 
 .nav_item a{
+  font-family: 'Oswald', sans-serif;
   text-decoration: none;
   color: black;
+  font-size: 25px;
+
 }
 
 .logo{
+
   margin-right: auto;
   position: relative;
   bottom: 15px;
@@ -48,5 +53,35 @@ margin-right: 2rem;
   
 }
 .nav_item:last-child{
+
   margin-left: auto;
 }
+
+/* Widgets */
+
+.widgets{
+  
+  padding:26px 0;
+  background: url("/Dolume/images/Gradient1.png");
+}
+
+.wid-list{
+  
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem, 0;
+}
+
+.wid-item{
+
+  list-style: none;
+  margin-right: 5rem;
+  }
+
+  .wid-item a{
+    
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+  }
