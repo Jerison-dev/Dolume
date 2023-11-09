@@ -50,10 +50,122 @@ padding: 33px 0 65px 33px;
 /* Small bois */
 
 .small-one{
-  background-image: url(/images/homepage.png);
+  background-image: url(/Dolume/images/homepage.png);
   /* should be 820px */
   width: 810px ;
   height: 232px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
+
+/* Agile Methodology Diagram */
+
+.method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Our Partners */
+.partners {
+	width: 100%;
+	padding: 0 1em;
+	background-color: #fff;
+}
+
+.partners__content-wrap {
+	width: 100%;
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 0 0 8em;
+}
+
+.partners__title {
+	margin-bottom: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #3f3f3f;
+	font-family: PlayfairDisplaySC;
+	font-size: 31px;
+	font-weight: 700;
+}
+
+.partners__carousel {
+	position: relative;
+	width: 1000px;
+	height: 333px;
+	height: 80px;
+	margin: 0 auto;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+	cursor: grab;
+}
+
+.partners__carousel-item {
+	width: auto;
+	height: 80px;
+	position: relative;
+	display: block;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+.partners__carousel-item:hover {
+  -webkit-transform: scale(1.05);
+     -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: .8;
+  
+}
+.partners__carousel-item-image {
+	width: auto;
+	height: 80px;
+	margin: 0 auto;
+}
+
+
+/*VENDOR:slick*/
+
+.partners .slick-prev,
+.partners .slick-next {
+	font-size: 0;
+	position: absolute;
+	z-index: 10;
+	top: -webkit-calc(50% - 6px);
+	top: -moz-calc(50% - 6px);
+	top: calc(50% - 6px);
+	width: 46px;
+	height: 30px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	background-position: center;
+  border:none;
+  background-color: transparent;
+}
+
+.partners .slick-prev:hover,
+.partners .slick-next:hover {
+	opacity: 1;
+	background-color: #fff;
+}
+
+.partners .slick-prev {
+	left: -50px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAeCAMAAABkHdyoAAAAk1BMVEUYkpX///8YkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpWVQiwwAAAAMHRSTlMAAJKpD37ZDoXMFoLUFcYQhhl/yRGDy4TXxdUXgQ3RC4ni1uTl5tgSGM3cGxPQkafx5C7FAAAAs0lEQVR4AZXOSXqCQBRF4ZuEooFAoGgIAaKiAmLj3f/qHNfE770z/gcHbp9fHtw+nOBk6AdyHjKKIeYJv1OIuWH2AzHP6RcQc8uygpjXbFKIecvfGGJu2AUQ85B/PcTcsqkg5gO7EWJe838HMd+Th+l4EnWetVw5AwzMRgWHZbQoOEJOq4LDMPMUHC3nVcFR8xIrOCybRcGRc7sqOAzLm4Ij4dQrOFreCwWH4RYoOB7P9/wFZw4aKiVSkGoAAAAASUVORK5CYII=);
+}
+
+.partners .slick-next {
+	right: -50px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAeCAMAAABkHdyoAAAAk1BMVEUYkpX///8YkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpUYkpWVQiwwAAAAMHRSTlMAAA+pkg7ZfhbMhRXUghDGGYYRyX/Lg9eExRfVDYEL0djm5eTW4okSGM0b3BPQp5ESw3IAAAAAqklEQVR42pXUSRaCQAwE0C4Um0EFmQScUFFQHOr+p3PNhmfV+i866SRmMs5sjlGmubugFbjxfAYCN+GSK4GbdUQrcMQLbgSOJGUmcIQ5C4HD27IUONyKVuCodwwEjiRnJnDsKx4EjuOJBUxzvvyVa3sj7yLXHiOUGimldr7SyL5VvsmJlCHoG2XEvIcywF2urMdzUJbvlSqrXbfK4YjfLIWjN9BC4J8vRvkBl/kZQ6LfYz0AAAAASUVORK5CYII=);
+}
+
+@media screen and (max-width: 1120px) {}
+
+@media screen and (max-width: 640px) {}
