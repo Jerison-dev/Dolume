@@ -148,6 +148,19 @@
 			</div>
 		</section>
 
+		<div id="segment-container">
+
+
+			<script>
+				$(document).ready(function () {
+					const segmentContainer = document.getElementById('segment-container');
+					const shadowRoot = segmentContainer.attachShadow({mode: 'open'});
+		
+					// Load the content of the HTML file into the shadow DOM
+					$(shadowRoot).load("rida.html");
+				});
+			</script>
+				</div>
 		  
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
